@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Audio copies can be large; back up only the alias database and settings. -->
+    <exclude domain="file" path="audio/" />
+</full-backup-content>

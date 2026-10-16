@@ -1,0 +1,5 @@
+# Never convert line endings in the speech model (binary + config read by Vosk)
+app/src/main/assets/** binary
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary
