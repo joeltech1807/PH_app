@@ -27,6 +27,7 @@ class CommandParserTest {
     @Test fun punctuationAndCaseIgnored() = assertEquals(play("song2", PlayMode.ONCE), parse("  PLAY,   Song2!! "))
     @Test fun multiWordAlias() = assertEquals(play("my jam", PlayMode.LOOP), parse("play my jam on repeat"))
     @Test fun fillersIgnored() = assertEquals(play("song2", PlayMode.ONCE), parse("hey asterix please play song two"))
+    @Test fun wakeWordIgnored() = assertEquals(play("song1", PlayMode.LOOP), parse("hey master voice play song1 in loop"))
     @Test fun articleAndNumberWord() = assertEquals(play("song1", PlayMode.ONCE), parse("play the song number one"))
     @Test fun startPlaying() = assertEquals(play("song1", PlayMode.ONCE), parse("start playing song1"))
 

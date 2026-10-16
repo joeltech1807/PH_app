@@ -73,7 +73,7 @@ fun SettingsScreen(modifier: Modifier, onOpenAppSettings: () -> Unit) {
         }
 
         Section("Background reliability") {
-            Text(if (unrestricted) "✓ Battery optimisation is off for Asterix." else "Battery optimisation is on. Android may stop listening in the background.",
+            Text(if (unrestricted) "✓ Battery optimisation is off for Master Voice." else "Battery optimisation is on. Android may stop listening in the background.",
                 style = MaterialTheme.typography.bodyMedium)
             if (!unrestricted) {
                 OutlinedButton(onClick = {
@@ -98,7 +98,7 @@ fun SettingsScreen(modifier: Modifier, onOpenAppSettings: () -> Unit) {
         }
 
         Section("About") {
-            Text("Asterix ${BuildConfig.VERSION_NAME}. Speech recognition runs entirely on the phone (Vosk, small English model). " +
+            Text("Master Voice ${BuildConfig.VERSION_NAME}. Speech recognition runs entirely on the phone (Vosk, small English model). " +
                 "No audio or text is sent to the internet.", style = MaterialTheme.typography.bodySmall)
         }
     }
@@ -167,11 +167,11 @@ private fun Toggle(title: String, description: String, checked: Boolean, onChang
 
 private val MANUFACTURER_TIPS = """
 Android can still stop background listening. To reduce that:
-• All phones: keep the Asterix notification visible; don't swipe the app away from recents on phones that kill on swipe.
-• Samsung: Settings → Battery → Background usage limits → remove Asterix from “Sleeping/Deep sleeping apps”; set App battery to “Unrestricted”.
+• All phones: keep the Master Voice notification visible; don't swipe the app away from recents on phones that kill on swipe.
+• Samsung: Settings → Battery → Background usage limits → remove Master Voice from “Sleeping/Deep sleeping apps”; set App battery to “Unrestricted”.
 • Xiaomi / Redmi / POCO (MIUI/HyperOS): enable Autostart; Battery saver → “No restrictions”; lock the app in recents.
 • OnePlus / OPPO / realme (ColorOS/OxygenOS): Battery → “Allow background activity”; disable “Optimise battery use”.
-• Huawei / Honor: App launch → Asterix → Manage manually, allow all three switches.
+• Huawei / Honor: App launch → Master Voice → Manage manually, allow all three switches.
 • Vivo: Background power consumption → allow high background power usage.
 More: dontkillmyapp.com
 """.trimIndent()

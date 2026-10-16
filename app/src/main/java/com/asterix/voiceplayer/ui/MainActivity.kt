@@ -138,7 +138,7 @@ private fun AppRoot(activity: MainActivity) {
                 modifier = modifier,
                 onStartListening = {
                     activity.requestStartListening { permanently ->
-                        pendingMessage = if (permanently) "Microphone permission is blocked. Enable it in Settings → Apps → Asterix → Permissions."
+                        pendingMessage = if (permanently) "Microphone permission is blocked. Enable it in Settings → Apps → Master Voice → Permissions."
                         else "Microphone permission is needed to listen for commands."
                         if (permanently) activity.openAppSettings()
                     }

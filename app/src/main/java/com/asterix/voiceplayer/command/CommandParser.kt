@@ -6,7 +6,7 @@ import com.asterix.voiceplayer.command.TextNormalizer.UNKNOWN_TOKEN
  * Deterministic parser from recognised speech to a [VoiceCommand].
  *
  * Rules, in order:
- *  1. Leading fillers ("hey asterix", "please", "okay") and trailing "please"/"now" are dropped.
+ *  1. Leading fillers ("hey master voice", "please", "okay") and trailing "please"/"now" are dropped.
  *  2. Whole-utterance phrases (stop, pause, resume, play again, loop on/off) are matched exactly.
  *  3. Otherwise the utterance must start with a verb (play/start/loop/repeat/stop/pause);
  *     anything else is [VoiceCommand.NotACommand], which keeps lyrics and conversation from
@@ -141,7 +141,7 @@ class CommandParser {
 
     companion object {
         private val LEADING_FILLERS = setOf(
-            "hey", "hi", "ok", "okay", "asterix", "asterisk", "please", "now", "can", "could", "would",
+            "hey", "hi", "ok", "okay", "master", "voice", "asterix", "asterisk", "please", "now", "can", "could", "would",
             "will", "you", "just", "and", "uh", "um", "so", "then",
         )
         private val TRAILING_FILLERS = setOf("please", "now", "thanks", "thank")

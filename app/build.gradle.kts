@@ -15,8 +15,8 @@ android {
         applicationId = "com.asterix.voiceplayer"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
         // GitHub repo whose Releases the in-app updater checks.
         buildConfigField("String", "UPDATE_REPO", "\"joeltech1807/PH_app\"")
         ndk {

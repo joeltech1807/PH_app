@@ -184,7 +184,7 @@ class AsterixService : Service() {
         val m = model ?: NotificationModel(v.mode, v.micSilenced, p.status, p.alias, p.looping, p.interrupted)
         val listening = m.mode != ListeningMode.OFF
 
-        val title = if (listening) "🎤 Microphone active — listening for commands" else "Asterix playback"
+        val title = if (listening) "🎤 Microphone active — listening for commands" else "Master Voice playback"
         val micLine = when {
             !listening -> null
             m.micSilenced -> "Microphone in use by another app"

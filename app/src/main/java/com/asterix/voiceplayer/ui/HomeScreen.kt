@@ -65,7 +65,7 @@ fun HomeScreen(
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         item {
-            Text("Asterix", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
+            Text("Master Voice", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
             Text("Offline voice-controlled audio player", style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }

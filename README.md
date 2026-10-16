@@ -1,6 +1,6 @@
-# Asterix Voice Audio Player
+# Master Voice
 
-## 📲 [Download Asterix.apk (latest)](https://github.com/joeltech1807/PH_app/releases/latest/download/Asterix.apk)
+## 📲 [Download MasterVoice.apk (latest)](https://github.com/joeltech1807/PH_app/releases/latest/download/MasterVoice.apk)
 
 Open this link on your Android phone, open the downloaded file, and allow installing when asked.
 It always points to the newest version.
@@ -41,7 +41,7 @@ The app needs Android 8.0 (API 26) or newer.
    (play / loop / repeat / stop / pause / resume ...).
 4. To stop listening, tap the button again or use **Stop listening** in the notification.
 
-If you denied the microphone permission permanently, open **Settings → Apps → Asterix → Permissions →
+If you denied the microphone permission permanently, open **Settings → Apps → Master Voice → Permissions →
 Microphone → Allow only while using the app**. Listening still works with the screen locked,
 because it runs in a foreground service that you started.
 
