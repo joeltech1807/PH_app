@@ -1,5 +1,11 @@
 # Asterix Voice Audio Player
 
+## 📲 [Download Asterix.apk (latest)](https://github.com/joeltech1807/PH_app/releases/latest/download/Asterix.apk)
+
+Open this link on your Android phone, open the downloaded file, and allow installing when asked.
+It always points to the newest version.
+
+
 An offline Android app that plays your own audio files when you say voice commands such as
 "play song1 in loop", "play song2 once", "pause" or "stop". Speech recognition (Vosk, small
 English model), command parsing and playback (Media3 ExoPlayer) all run on the phone. The app
